@@ -137,8 +137,8 @@ async function ensureOffscreen() {
   creatingOffscreen ??= chrome.offscreen
     .createDocument({
       url: OFFSCREEN_URL,
-      reasons: ['WORKERS', 'CLIPBOARD'],
-      justification: 'Chạy Tesseract OCR trong Web Worker và ghi kết quả vào clipboard.',
+      reasons: ['CLIPBOARD'],
+      justification: 'Chạy model OCR (WebAssembly) và ghi kết quả vào clipboard.',
     })
     .finally(() => (creatingOffscreen = null));
   await creatingOffscreen;

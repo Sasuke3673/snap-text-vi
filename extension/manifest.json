@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Snap Text VI – Copy chữ từ ảnh",
   "short_name": "Snap Text VI",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Kéo chọn vùng trên màn hình hoặc chuột phải vào ảnh để nhận dạng chữ tiếng Việt/Anh và copy ngay. Chạy offline.",
   "icons": {
     "16": "icons/icon16.png",
