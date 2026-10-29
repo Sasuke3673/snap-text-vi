@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Snap Text VI – Copy chữ từ ảnh",
+  "short_name": "Snap Text VI",
+  "version": "1.0.0",
+  "description": "Kéo chọn vùng trên màn hình hoặc chuột phải vào ảnh để nhận dạng chữ tiếng Việt/Anh và copy ngay. Chạy offline.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Chọn vùng để copy chữ (Alt+Shift+C)",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "start-capture": {
+      "suggested_key": { "default": "Alt+Shift+C" },
+      "description": "Chọn vùng màn hình để copy chữ"
+    }
+  },
+  "permissions": ["activeTab", "contextMenus", "scripting", "offscreen", "clipboardWrite"],
+  "host_permissions": ["<all_urls>"],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "snap-text-vi",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chrome/Edge extension: chọn vùng màn hình hoặc ảnh, nhận dạng chữ (OCR) tiếng Việt/Anh offline và copy vào clipboard.",
+  "scripts": {
+    "vendor": "node scripts/vendor.mjs",
+    "postinstall": "node scripts/vendor.mjs"
+  },
+  "devDependencies": {
+    "@tesseract.js-data/vie": "1.0.0",
+    "tesseract.js": "5.1.1",
+    "tesseract.js-core": "5.1.1"
+  }
+}
